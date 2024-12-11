@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to left, #9b45b4, #f43e67 );
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    background-color: #ffc500;
+    padding: 5px 10px;
+    width: calc(100%/5);
+    margin: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: grid;
+    grid-template-areas: "Terry Terry Taco-price"
+                        "Terry Terry Kambucha-price";
+    gap: 5px;
+}
+.Terry{
+    grid-area: Terry;
+    padding: 50px;
+    margin: 5px;
+    background-image: url(Images/taco.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 150px;
+    border-radius: 15px;
+}
+.Terry h1,
+.Terry p{
+    background-color: #ffc500;
+    width: fit-content;
+    padding: 5px 10px;
+}
+.Taco-price{
+    grid-area: Taco-price;
+    background-color: #ffc500;
+    margin: 5px;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.Kambucha-price{
+    grid-area: Kambucha-price;
+    background-color: #ffc500;
+    margin: 5px;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.Taco-price .price,
+.Kambucha-price .price{
+    font-size: 50px;
+}
+.Taco-price p,
+.Kambucha-price p{
+    margin: 0;
+    text-align: center;
+}
+section.Details{
+    display: flex;
+    justify-content: space-between;
+}
+section.Details div{
+    background-color: white;
+    padding: 5px 10px;
+    width: calc(100%/3);
+    margin: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+section.Details .icon{
+    font-size: 40px;
+}
+h4{
+    font-size: 18px;
+}
+section p{
+    color: rgba(0, 0, 0, 0.581);
+}
+section.featured-taco{
+    display:flex;
+    align-items: center;
+    background-color: white;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 10px;
+}
+h3{
+    font-size: 20px;
+}
+section.featured-taco a{
+    text-decoration: none;
+    color: black;
+    background-color: #ffc500;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+section.featured-taco a:hover{
+    background-color: #ffd500;
+}
+div.Instant h2{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+div.Instant h2::before{
+    display: block;
+    content: "";
+    background-image: linear-gradient(to left ,#ffc500,transparent);
+    height: 10px;
+}
+div.Instant h2::after{
+    display: block;
+    content: "";
+    background-image: linear-gradient(to right ,#ffc500,transparent);
+    height: 10px;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+}
+footer img{
+    border-radius: 15px;
+    width: 100%;
+    margin: 5px;
+}
